@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mindful Penguin</title>
+  <style>
+    :root {
+      --penguin-body: #336b98;
+      --penguin-belly: #ffffff;
+      --penguin-accent: #ffa500;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #f5f5f5;
+    }
+
+    #logo {
+      text-align: center;
+    }
+
+    #logo h1 {
+      font-family: 'Courier New', Courier, monospace;
+      color: #000000;
+    }
+
+    .penguin-body {
+      fill: var(--penguin-body);
+    }
+
+    .penguin-belly {
+      fill: var(--penguin-belly);
+    }
+
+    .penguin-accent {
+      fill: var(--penguin-accent);
+    }
+  </style>
+</head>
+
+<body>
+  <article id="logo">
+    <svg width="200" height="200" viewBox="0 0 200 200">
+      <!-- Body -->
+      <ellipse class="penguin-body" cx="100" cy="100" rx="60" ry="80" />
+
+      <!-- Belly -->
+      <ellipse class="penguin-belly" cx="100" cy="100" rx="40" ry="60" />
+
+      <!-- Head -->
+      <circle class="penguin-body" cx="100" cy="60" r="30" />
+
+      <!-- Eyes -->
+      <circle class="penguin-belly" cx="85" cy="55" r="5" />
+      <circle class="penguin-belly" cx="115" cy="55" r="5" />
+      <circle class="penguin-body" cx="85" cy="55" r="2" />
+      <circle class="penguin-body" cx="115" cy="55" r="2" />
+
+      <!-- Beak -->
+      <path class="penguin-accent" d="M95 65 L105 65 L100 75 Z" />
+
+      <!-- Flippers -->
+      <ellipse class="penguin-body" cx="40" cy="100" rx="20" ry="10" transform="rotate(-30, 40, 100)" />
+      <ellipse class="penguin-body" cx="160" cy="100" rx="20" ry="10" transform="rotate(30, 160, 100)" />
+
+      <!-- Feet -->
+      <ellipse class="penguin-accent" cx="80" cy="170" rx="15" ry="8" />
+      <ellipse class="penguin-accent" cx="120" cy="170" rx="15" ry="8" />
+    </svg>
+    <h1>Mindful Penguin</h1>
+  </article>
+</body>
+
+</html>
